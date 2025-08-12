@@ -15,10 +15,16 @@
         }
         iframe {
             border: none;
-            width: 80%;
-            height: 80%;
+            width: 90vw; /* Nästan hela bredden */
+            height: 50.625vw; /* 16:9 proportioner baserat på bredd */
             max-width: 960px;
             max-height: 540px;
+        }
+        @media (max-width: 768px) {
+            iframe {
+                width: 100vw;
+                height: 56.25vw; /* 16:9 proportioner */
+            }
         }
     </style>
 </head>
