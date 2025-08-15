@@ -1,48 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>:: iRONMEN ::</title>
-    <style>
-        body {
-            background-color: #222;
-            text-align: center;
-            margin: 0;
-            padding: 20px 0;
-        }
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 */
-            height: 0;
-            margin: 40px auto; /* extra luft mellan videorna */
-            max-width: 960px;
-        }
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-    </style>
-</head>
-<body>
-    <div class="video-container">
-        <iframe src="https://odysee.com/$/embed/iRONMEN-2024-H264-1080p/f" allowfullscreen></iframe>
-    </div>
-    <div class="video-container">
-        <iframe src="https://odysee.com/$/embed/iRONMEN-22/1" allowfullscreen></iframe>
-    </div>
-    <div class="video-container">
-        <iframe src="https://odysee.com/$/embed/iRONMEN-2020-720p/2" allowfullscreen></iframe>
-    </div>
-    <div class="video-container">
-        <iframe src="https://odysee.com/$/embed/iRONMEN-2019/e" allowfullscreen></iframe>
-    </div>
-    <div class="video-container">
-        <iframe src="https://odysee.com/$/embed/IRONMEN-2018/d" allowfullscreen></iframe>
-    </div>
-</body>
-</html>
+<style>
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9-format */
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 50px; /* 50px mellanrum mellan videor */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none; /* Tar bort ramen */
+}
+</style>
+
+<div class="video-container">
+  <iframe src="https://odysee.com/$/embed/iRONMEN-2024-H264-1080p/f" allowfullscreen></iframe>
+</div>
+
+<div class="video-container">
+  <iframe src="https://odysee.com/$/embed/iRONMEN-22/1" allowfullscreen></iframe>
+</div>
+
+<div class="video-container">
+  <iframe src="https://odysee.com/$/embed/iRONMEN-2020-720p/2" allowfullscreen></iframe>
+</div>
+
+<div class="video-container">
+  <iframe src="https://odysee.com/$/embed/iRONMEN-2019/e" allowfullscreen></iframe>
+</div>
