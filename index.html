@@ -1,10 +1,19 @@
 <style>
+body {
+  background-color: #111; /* Mörk bakgrund */
+  color: #fff;
+  font-family: sans-serif;
+  text-align: center; /* Centrerar innehåll */
+}
+
 .video-container {
   position: relative;
   padding-bottom: 56.25%; /* 16:9-format */
   height: 0;
   overflow: hidden;
-  margin-bottom: 50px; /* 50px mellanrum mellan videor */
+  margin: 0 auto 50px auto; /* Centrerad och 50px space */
+  max-width: 800px; /* Maxbredd på dator */
+  width: 100%;
 }
 
 .video-container iframe {
@@ -13,7 +22,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  border: none; /* Tar bort ramen */
+  border: none;
 }
 </style>
 
@@ -31,4 +40,8 @@
 
 <div class="video-container">
   <iframe src="https://odysee.com/$/embed/iRONMEN-2019/e" allowfullscreen></iframe>
+</div>
+
+<div class="video-container">
+  <iframe src="https://odysee.com/$/embed/IRONMEN-2018/d" allowfullscreen></iframe>
 </div>
