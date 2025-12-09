@@ -1,55 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
-  <meta charset="UTF-8">
-  <title>i R O N M E N</title>
-  <link rel="icon" type="image/png" href="kebabstugan.png">
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<title>i R O N M E N</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="kebabstugan.png">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-
 <header>
-  <button id="menu-toggle">☰</button>
-  <h1>VELKÅMEN TILL KEBABSTUGAN!</h1>
+<h1>iMNs kebabstuga!</h1>
+<div id="menu"></div>
 </header>
 
-<nav id="side-menu">
-  <a href="2025.html">2025</a>
-  <a href="2024.html">2024</a>
-  <a href="2022.html">2022</a>
-  <a href="2021.html">2021</a>
-  <a href="2020.html">2020</a>
-  <a href="2019.html">2019</a>
-  <a href="2018.html">2018</a>
-</nav>
 
-<main>
-  <section class="entry">
-    <div class="video-container">
-      <iframe src="https://odysee.com/$/embed/IRONMEN-2025-1080p/e" allowfullscreen></iframe>
-    </div>
+<main class="page-container">
+<section class="intro">
+<p>Välkommen till Järngubbarnas experimentiella kebabstuga. Här finner du klottervideor, kebab som ej åldrats väl och möjligen bilder m.m. längre fram i tiden.<p>Vi bor i huvudsak på instagram så besök oss gärna där -> <a href="https://www.instagram.com/imn.crew/" target="_blank" rel="noopener noreferrer">
+  @imn.crew
+</a></p>
+</section>
 
-    <div class="text-box">
-      <h2>2025</h2>
-      <p>
-GEHÖR, VERNER & ASEA m.fl härjar vidare. Taskig, tjock joggarhäxa ringer pålicen på VERNER & KNOR - ärendet läggs ned. Get fucked!<p>
-Shoutout till OTG crew, och RIP Ozzy!!
-      </p>
-    </div>
-  </section>
+
+<section class="entry">
+<div class="video-container">
+<iframe src="https://odysee.com/$/embed/IRONMEN-2025-1080p/e" allowfullscreen></iframe>
+</div>
+<div class="text-box">
+<h2>2025</h2>
+<p>GEHÖR, WINK, VERNER & ASEA härjar vidare. Tjock joggarhäxa ringer pålicen på KNOR & VERNER, men ärendet läggs ned. HAHA get fucked!<p>Shoutout till OTG crew! RIP Ozzy.</p>
+</div>
+</section>
 </main>
 
-<script>
-  const toggle = document.getElementById("menu-toggle");
-  const menu = document.getElementById("side-menu");
-  toggle.addEventListener("click", () => {
-    menu.classList.toggle("open");
-  });
-</script>
 
+<script src="main.js"></script>
 </body>
 </html>
 

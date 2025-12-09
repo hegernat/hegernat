@@ -1,37 +1,31 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
-  <meta charset="UTF-8">
-  <title>i R O N M E N</title>
-  <link rel="icon" type="image/png" href="kebabstugan.png">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>2021 – KEBABSTUGAN</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="kebabstugan.png">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header><button id="menu-toggle">☰</button><h1>2021</h1></header>
-<nav id="side-menu">
-  <a href="index.html">Hem</a>
-  <a href="2025.html">2025</a>
-  <a href="2024.html">2024</a>
-  <a href="2022.html">2022</a>
-  <a href="2020.html">2020</a>
-  <a href="2019.html">2019</a>
-  <a href="2018.html">2018</a>
-</nav>
-<main>
+<header>
+<h1>iRONMEN (2021)</h1>
+<div id="menu"></div>
+</header>
+
+
+<main class="page-container">
 <section class="entry">
- 
-  <div class="video-container">
+<div class="video-container">
     <iframe src="https://odysee.com/$/embed/ironmen-2021-1080p:1" allowfullscreen></iframe>
-  </div>
- 
-<div class="text-box"><p>SIKO, VERNER, WINK & ASEA njuter av en ganska lugn sommar</p></div>
+</div>
+<div class="text-box">
+<p>VERNER, SIKO & ASEA målar vidare och har en ganska lugn sommar i Österpund</p>
+</div>
 </section>
 </main>
-<script>
-const toggle=document.getElementById("menu-toggle");
-const menu=document.getElementById("side-menu");
-toggle.addEventListener("click",()=>{menu.classList.toggle("open")});
-</script>
+
+
+<script src="main.js"></script>
 </body>
 </html>
