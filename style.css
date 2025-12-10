@@ -120,4 +120,26 @@ grid-template-columns: 1fr;
   max-width: 380px;   /* styr hur stor den får bli på desktop */
   height: auto;
 }
+/* ===== ASCII LOGO ===== */
+.ascii-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.ascii-logo pre {
+  font-family: monospace;
+  font-size: 10px;     /* desktop-storlek */
+  line-height: 1.1;
+  color: #ddd;
+  background: none;
+  margin: 0;
+  white-space: pre;
+}
+
+/* Mobilanpassning */
+@media (max-width: 700px) {
+  .ascii-logo pre {
+    font-size: 7px;
+  }
 }
