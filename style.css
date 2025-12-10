@@ -24,7 +24,7 @@ letter-spacing: 3px;
 display: flex;
 justify-content: center;
 flex-wrap: wrap;
-gap: 25px;
+gap: 15px;
 margin-bottom: 15px;
 }
 
@@ -142,4 +142,35 @@ grid-template-columns: 1fr;
   .ascii-logo pre {
     font-size: 7px;
   }
+/* ===== EXTRA VIDEO ROW (LUFTIGARE) ===== */
+.video-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;              /* <-- MER MELLANRUM MELLAN VIDEOR */
+  margin-top: 60px;      /* <-- MER LUFT MOT STORA VIDEON */
 }
+
+.video-container.small {
+  aspect-ratio: 16 / 9;
+}
+
+/* Mobil */
+@media (max-width: 900px) {
+  .video-row {
+    grid-template-columns: 1fr;
+    gap: 24px;          /* luft även i staplat läge */
+  }
+  /* ===== 9:16 STÅENDE VIDEO ===== */
+.video-container.vertical {
+  aspect-ratio: 9 / 16;
+  max-width: 260px;      /* hindrar dem från att bli för breda */
+  margin: 0 auto;       /* centrerar dem snyggt i sin grid-kolumn */
+}
+
+/* Mobil – låt dem bli bredare igen */
+@media (max-width: 900px) {
+  .video-container.vertical {
+    max-width: 100%;
+  }
+}
+
